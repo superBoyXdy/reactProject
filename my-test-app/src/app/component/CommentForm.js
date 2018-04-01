@@ -1,7 +1,4 @@
-/**
- * Created by lingyangjiao
- * Date: 2018/1/3
- */
+
 import React from 'react'
 
 class CommentForm extends React.Component {

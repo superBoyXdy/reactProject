@@ -1,8 +1,3 @@
-/**
- * Created by lingyangjiao
- * Date: 2017/9/19
- */
-
 export const ADD_TODO = 'ADD_TODO';
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISIBILITY_FILTER = 'SET_BISIBILITY_FILTER'

@@ -1,7 +1,3 @@
-/**
- * Created by lingyangjiao
- * Date: 2018/3/7
- */
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './Header.css'

@@ -1,7 +1,4 @@
-/**
- * Created by lingyangjiao
- * Date: 2018/1/6
- */
+
 
 import React from 'react'
 import PropTypes from 'prop-types'

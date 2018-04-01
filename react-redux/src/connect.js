@@ -1,7 +1,4 @@
-/**
- * Created by lingyangjiao
- * Date: 2018/2/28
- */
+
 
 import React from 'react'
 
