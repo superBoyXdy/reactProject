@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="title"></div>
+    <div id="content"></div>
+</body>
+
+<script>
+    class EventEmitter {
+    	constructor() {
+    		this.events = {}
+        }
+
+    	on(eventName, func) {
+          if(!this.events[eventName]) {
+          	this.events[eventName] = []
+          }
+          this.events[eventName].push(func)
+        }
+
+        emit(eventName, ...args) {
+           let funcs = this.events[eventName]
+          if(funcs && funcs.length) {
+           	for(let j = 0; j < funcs.length; j++){
+           		funcs[j](...args)
+            }
+          }
+        }
+
+        off(eventName, func) {
+            let funcs = this.events[eventName]
+          if(func) {
+            	this.events[eventName].splice(func,1)
+          }else {
+            	delete this.events[eventName]
+          }
+        }
+    }
+
+    let salesOffices = {}
+
+    salesOffices.clientList = []
+    salesOffices.listen = function (fn) {
+      this.clientList.push(fn)
+		}
+</script>
+</html>
